@@ -1,0 +1,25 @@
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+      Forecast by Zipcode or City Name
+    </h1>
+  </div>
+  
+  
+  <hr>
+  <div class="container">
+    
+    <input type="text" [(ngModel)]=zipcode>
+    <button (click)=searchCity()>Search by City Name/Zipcode</button>
+  
+  </div>
+  
+  <br />
+  
+  <h4>City: {{cityName}}</h4>
+  <h4>Description: {{description}} </h4>
+  <h4>Temperature: {{temp}} &#8457;</h4>
+  <h4>WindSpeed: {{windspeed}} MPH</h4>
+  <h4>High of the day: {{high}} &#8457;</h4>
+  <h4>Low of the day: {{low}} &#8457;</h4>
