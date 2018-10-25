@@ -1,25 +1,21 @@
 
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-    <h1>
-      Forecast by Zipcode or City Name
-    </h1>
-  </div>
-  
-  
-  <hr>
-  <div class="container">
-    
-    <input type="text" [(ngModel)]=zipcode>
-    <button (click)=searchCity()>Search by City Name/Zipcode</button>
-  
-  </div>
-  
-  <br />
-  
-  <h4>City: {{cityName}}</h4>
-  <h4>Description: {{description}} </h4>
-  <h4>Temperature: {{temp}} &#8457;</h4>
-  <h4>WindSpeed: {{windspeed}} MPH</h4>
-  <h4>High of the day: {{high}} &#8457;</h4>
-  <h4>Low of the day: {{low}} &#8457;</h4>
+  <img width = 200 src = "images/cloudandsun.png">
+  <h1>
+    Forecast by Zipcode or City Name
+  </h1>
+  <p> Type in your home town name or zipcode and get <br /> what the weather is like there right now!</p>
+</div>
+
+<div class="container" style="text-align: left-center">
+  <button class = "button" (click)=searchCity()>Search by City Name/Zipcode </button>
+  <input type="text" [(ngModel)]=zipcode>
+  <br/>
+  <h4><u>City: </u> {{cityName}}</h4>
+  <h4><u>Description: </u>{{description}} </h4>
+  <h4><u>Temperature: </u>{{temp}} &#8457;</h4>
+  <h4><u>Wind Speed: </u> {{windspeed}} MPH</h4>
+  <h4><u>High of the Day: </u> {{high}} &#8457;</h4>
+  <h4><u>Low of the Day: </u> {{low}} &#8457;</h4>
+</div>

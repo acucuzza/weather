@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Http, Response, HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
-
+  constructor() { 
+  }
+  city = ""
   ngOnInit() {
   }
-
 }

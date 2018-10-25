@@ -1,27 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav class="navbar-wrapper navbar-default navbar-fixed-top navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Weather</a>
-      <button type="button" class='navbar-toggle collapsed' (click)="menuCollapsed = !menuCollapsed"></button>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse" [collapse]='menuCollapsed'>
+<body class = "borderexample">
+  <nav class="navbar-wrapper navbar-default navbar-fixed-top navbar-static-top" role="navigation">
+    <div class="borderexample">
+      <div style="text-align:center">
+        <h6 style="color:red;"><u>Data provided by OpenWeatherApp</u></h6>
+      </div>
+      <div class="navbar-header">
+        <h6><a class="navbar-brand" href="#" style="color:yellow;"><u>Weather</u></a></h6>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse" [collapse]='menuCollapsed'>
         <ul class="nav navbar-nav">
           <li routerLinkActive='active'>
-            <a routerLink="home">Home</a>
+            <a routerLink="homepage" style="color:yellow;"><b>Home</b></a>
           </li>
           <li routerLinkActive='active'>
-            <a routerLink="weather/forecast">Forecast</a>
+            <a routerLink="weather/forecast" style="color:yellow;"><b>Forecast</b></a>
           </li>
         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class='height-fix'>
+    <div>
+      <router-outlet></router-outlet>
     </div>
   </div>
-</nav>
-<div style="text-align:center" class="jumbotron">
-  <h4>Data provided by OpenWeatherApp</h4>
-</div>
-<div class='height-fix'>
-  <div>
-<router-outlet></router-outlet>
-  </div>
-</div>
+</body>
